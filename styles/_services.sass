@@ -1,0 +1,75 @@
+.services
+  
+.service
+  display: flex
+  flex-direction: column-reverse
+
+  &-1, &-2
+    background-color: darken($white, 5%)
+
+  &-3
+    background-image: url("../images/mobile/image-graphic-design.jpg")
+
+    & h2
+      color: $dark-desaturated-cyan
+    
+    & p
+      color: $dark-desaturated-cyan
+      font-weight: 900
+
+  &-4
+    background-image: url("../images/mobile/image-photography.jpg")
+
+    & h2
+      color: $dark-blue
+
+    & p
+      color: $dark-blue
+      font-weight: 900
+
+  &-3, &-4
+    background-size: cover
+    background-position: center
+    padding-top: 35rem
+
+  &__description
+    padding: 7rem 2.5rem
+    text-align: center
+
+    &-text
+      color: $dark-grayish-blue
+      font-family: "Barlow"
+      font-size: 1.6rem
+      line-height: 2.5rem
+      margin: 2.5rem 0
+
+    &-subheadline
+      color: $vd-desaturated-blue
+      font-family: "Fraunces"
+      font-weight: 900
+
+    &-btn
+      color: $vd-desaturated-blue
+      font-family: "Fraunces"
+      font-weight: 900
+      text-decoration: none
+      text-transform: uppercase
+      z-index: 10
+      position: relative
+
+      &-red::before
+        background-color: $soft-red
+
+      &-yellow::before
+        background-color: fade-out($yellow, .5)
+
+      &::before
+        content: ""
+        width: 110%
+        height: 10px
+        border-radius: 10px
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        z-index: -1
