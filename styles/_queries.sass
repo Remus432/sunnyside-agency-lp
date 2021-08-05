@@ -1,0 +1,116 @@
+@media (min-width: 1440px)
+  .header
+    background-image: url("../images/desktop/image-header.jpg")
+
+    &__nav
+      &-hamburger
+        display: none
+
+      &-menu
+        display: flex
+
+        &-item
+          margin: 0 1.8rem
+          
+          &-link
+            color: $white
+            position: relative
+            padding: 1rem 0
+
+            &:before
+              content: ""
+              width: 0%
+              height: 3px
+              background-color: $soft-red
+              position: absolute
+              bottom: 0
+              left: 0
+              transition: .5s all ease-in-out
+
+            &:hover:before
+              width: 100%
+
+            &-btn
+              background-color: $white
+              color: $vd-desaturated-blue
+              padding: 1.5rem 2rem
+
+              &::before
+                display: none
+
+              &:hover
+                background-color: fade-out($white, .7)
+                color: $white
+
+  .services
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+
+  .service
+    display: flex
+    flex-direction: row
+
+    &-2
+      flex-direction: row-reverse
+
+    &-3
+      background-image: url("../images/desktop/image-graphic-design.jpg")
+
+    &-4
+      background-image: url("../images/desktop/image-photography.jpg")
+      
+    &__col
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+    
+    &__description
+      padding: 10rem
+      display: flex
+      text-align: left
+      justify-content: center
+      align-items: flex-start
+      flex-direction: column
+      flex 2
+
+      &-subheadline
+        font-size: 4rem
+        text-justify: distribute
+
+      &-text
+        width: 68%
+
+    &__image
+      width: 100%
+    
+    
+    &-3 &__description,
+    &-4 &__description,
+      align-items: center
+      text-align: center
+
+  .projects
+    grid-template-columns: repeat(4, 1fr)
+
+  .testimonials
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 14rem 4rem
+
+  .clients
+    display: flex
+
+  .client
+    padding: 4rem 
+
+    &__quote
+      line-height: 3rem
+      margin: 6rem 0
+
+    &__info
+      &-role
+        margin-top: 1.8rem
+    
+    &:nth-of-type(2)
+      margin: 6rem

@@ -10,3 +10,8 @@ window.addEventListener("scroll", e => {
   const scrollY = window.scrollY
   scrollY > 100 ? nav.classList.add("sticky") : nav.classList.remove("sticky")
 })
+
+AOS.init({
+  offset: -10,
+  duration: 1000
+})

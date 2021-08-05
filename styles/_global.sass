@@ -35,6 +35,9 @@ li
   z-index: 1000
   animation: fadeInUp .5s ease-in-out forwards
 
+  &-item
+    margin: 1.8rem 0
+
   &::before
     content: ""
     width: 25px
@@ -46,25 +49,6 @@ li
     transform-origin: bottom
     transform: translateY(-100%)
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-
-  & li 
-    margin: 1.8rem 0
-
-  & .btn
-    background-color: $yellow
-    font-family: "Faurces"
-    font-weight: 900
-    font-size: 1.6rem
-    text-transform: uppercase
-    padding: 1.5rem 2rem
-    border-radius: 3rem
-
-    & a 
-      color: $vd-desaturated-blue!important
-    
-  & a 
-    font-family: "Barlow"
-    color: $dark-grayish-blue
 
 .sticky
   width: 100%

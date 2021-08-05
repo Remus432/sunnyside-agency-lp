@@ -17,9 +17,17 @@
         color: lighten($dark-desaturated-cyan, 10%)
         font-family: "Barlow"
 
+        &:hover
+          color: $white
+
   &__socialmedia
     &-icon
       margin: 0 1rem
+      cursor: pointer
+
+      &:hover
+        filter: grayscale(100%) brightness(10%) contrast(50%) hue-rotate(100deg)
+
 
   &__logo
     fill: $dark-moderate-cyan
