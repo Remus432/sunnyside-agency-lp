@@ -8,6 +8,7 @@
 
 html
   font-size: 62.5%
+  scroll-behavior: smooth
 
 body
   font-size: 1.8rem
@@ -32,6 +33,7 @@ li
   margin: 0 auto
   background-color: $white
   z-index: 1000
+  animation: fadeInUp .5s ease-in-out forwards
 
   &::before
     content: ""
@@ -63,3 +65,13 @@ li
   & a 
     font-family: "Barlow"
     color: $dark-grayish-blue
+
+.sticky
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  padding: 2.5rem
+  background-color: $dark-blue
+  z-index: 1000
+  animation: slideInDown .5s ease-in-out forwards
